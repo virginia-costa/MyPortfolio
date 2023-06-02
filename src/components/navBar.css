@@ -1,0 +1,92 @@
+.headerLight, .headerDark  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    font-size: large;
+    font-weight: bold;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 4rem;
+}
+
+.anchors {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    margin-left: 2.5rem;
+    flex-direction: column;
+}
+
+.credits {
+    margin-left: -0.8rem;
+    font-size: xx-small;
+}
+
+.logoNav {
+    width: 10%;
+    height: 10%;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+
+li {
+    list-style: none;
+    padding: 1rem;
+
+}
+
+.headerDark {
+    background-color: #232323;
+
+}
+
+.headerDark li a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerDark a {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerLight {
+    background-color: #ffffff;
+}
+
+.headerLight li a {
+    color: rgb(22, 22, 189);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerLight a {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}

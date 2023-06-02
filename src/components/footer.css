@@ -1,0 +1,30 @@
+.footerDark, .footerLight {
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footerDark {
+    background-color: #232323;
+}
+
+.footerLight {
+    background-color: #ffffff
+}
+
+.footerLight button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.footerDark button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}

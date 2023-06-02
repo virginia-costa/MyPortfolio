@@ -1,0 +1,71 @@
+.homeLight,
+.homeDark {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image a {
+  display: block;
+  margin-top: -3rem;
+  text-align: center;
+  font-size: xx-small;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text {
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.textcontent {
+  font-weight: 500;
+  font-size: x-large;
+  line-height: 2;
+  opacity: 0;
+  animation: fade-in 3.5s ease-in-out forwards;
+  font-family: 'Delicious Handrawn';
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homeLight,
+  .homeDark {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .text {
+    text-align: left;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .homeLight,
+  .homeDark {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .text {
+    text-align: center;
+    margin-right: 2rem;
+  }
+}

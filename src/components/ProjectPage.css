@@ -1,0 +1,14 @@
+.github {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.goGit {
+  width: 10rem;
+  height: 10rem;
+}
+
+.projectPage {
+  margin: auto;
+}
